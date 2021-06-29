@@ -1,0 +1,102 @@
+.logincontainer{
+    width: 400px;
+    height: 700px;
+    background: #ffffff;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.logoUber{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.logincontainer h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.logincontainer label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.logincontainer input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logincontainer input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+.logincontainer input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+.logincontainer input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.logincontainer a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    text-align: center;
+}
+.logincontainer a:hover{
+    color: #b80f22;
+}
+#hol{
+    text-align: center;
+    color: #14CF37;
+ }
+ #enviar{
+background-color: #EBD353;
+border: none;
+color: #000;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 16px;
+opacity: 0.8;
+cursor: pointer;
+border-radius: 20px;
+margin-bottom: 100;
+margin-right: auto;
+margin-left: auto;
+}
+#enviar:hover{
+
+opacity: 1;
+
+}
+#enviar:active{
+transform: scale(0.95);
+  
+  }

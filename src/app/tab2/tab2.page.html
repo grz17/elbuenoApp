@@ -1,17 +1,31 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
   </ion-header>
+<div class="logincontainer">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <img class="logoUber" src="./assets/img/Tacologo2.jpg">
+    <h1 class="titulo">Registrar Usuario</h1>
+    <form #form="ngForm"(submit)="ngOnInit()">
+        <label for="NombreUsuarioL">Apellidos</label>
+        <input type="text"  [(ngModel)]="apellido"name="apellido" placeholder="Apellidos">
+        <label for="NombreUsuarioL">Nombre</label>
+        <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
+        <label for="NombreUsuarioL">Nombre Usuario</label>
+        <input  [(ngModel)]="username" type="text" name=" username" placeholder="Nombre de usuario">
+        <label  for="CorreoR">Correo Electronico</label>
+        <input type="text"  [(ngModel)]="correo" name="correo" placeholder="Correo Electronico">
+
+        <label for="ConstraseñaUsuarioR" >Contraseña</label>
+        <input type="password"  [(ngModel)]="contra" name="contra" placeholder="Contraseña">
+
+        <label for="ConstraseñaUsuarioR">Confirmar contraseña</label>
+        <input type="password"  [(ngModel)]="rpassword" name="rpassword" placeholder="Contraseña del usuario">
+
+        <button id="enviar">Registrar </button>
+         <a href="/tabs/tab1">Regresar</a>
+    </form>
+</div>
 </ion-content>

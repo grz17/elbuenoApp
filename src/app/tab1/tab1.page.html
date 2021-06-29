@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title id= "hol">
+        Bienvenido
     </ion-title>
-  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="false" id="hol">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar id ="hol">
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+<div class="logincontainer">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <img class="logoUber" src="./assets/img/Tacologo.jpg">
+    <h1 class="titulo">Iniciar Sesion</h1>
+    <form #form="ngForm"(submit)="ngOnInit()">
+        <label for="NombreUsuarioL">Correo</label>
+        <input  [(ngModel)]="correo" type="text" placeholder="Correo"  name="correo" required="">
+
+        <label for="ConstraseñaUsuarioL">Contraseña</label>
+        <input  [(ngModel)]="contra" type="password" placeholder="Contraseña del usuario" name="contra"required="">
+
+        <button id="enviar">Iniciar Sesion </button>
+
+        <a href="/tabs/tab2">Crear una cuenta nueva</a>
+    </form>
+</div>
 </ion-content>
